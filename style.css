@@ -1,10 +1,10 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color:#3e434b;
 }
 
-* {
-    margin:0;
-}
+
 nav {
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
     padding: 25px 0;
@@ -19,5 +19,132 @@ nav {
 li {
     list-style-type: none;
     margin-left: 20px;
+}
 
+.section {
+    padding: 110px 40px 130px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.contenedor1 {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.infopersonal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+    margin: 50px;
+}
+
+h2{
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 0.375em;
+}
+
+.saludo {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+
+.nombre {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #CBC0D3;
+}
+
+.fotoperfil {
+    width: 600px;
+    margin: 50px;
+}
+
+.descripcion {
+    color: #8E9AAF;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.contenedor-skills {
+    background-color: #FEEAFA;
+}
+
+.columna {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.descripcion-skills {
+    max-width: 400px;
+    font-weight: 200;
+}
+
+.grilla-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #fff;
+    border: 1px solid #dddfe5;
+    border-radius: 8px;
+    width: 260px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.icon {
+    font-size: 4.71em;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.quote-section {
+    background-color: #CBC0D3;
+}
+
+.quote-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.quote {
+    font-size: 1.2rem;
+    max-width: 800px;
+    color: white;
+}
+
+.author-quote {
+    color:white;
 }
