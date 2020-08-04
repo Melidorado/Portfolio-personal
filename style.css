@@ -4,6 +4,17 @@ body {
     color:#3e434b;
 }
 
+a {
+    text-decoration: none;
+}
+a:visited {
+    color:#3e434b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 nav {
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
@@ -18,8 +29,12 @@ nav {
 
 li {
     list-style-type: none;
+
+}
+.li-nav {
     margin-left: 20px;
 }
+
 
 .section {
     padding: 110px 40px 130px;
@@ -113,19 +128,22 @@ h1 {
     background-color: #fff;
     border: 1px solid #dddfe5;
     border-radius: 8px;
-    width: 260px;
+    width: 230px;
+    height: 230px;
     margin: 10px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon {
-    font-size: 4.71em;
-    margin-top: 24px;
-    margin-bottom: 20px;
+    font-size: 120px;
 }
 
 .skill-title {
-    font-size: 1.25em;
+    margin-top: 20px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -146,5 +164,101 @@ h1 {
 }
 
 .author-quote {
+    color:white;
+}
+
+.barra-pequeña {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.li-filtros {
+    margin: 30px;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.proyecto {
+    background-color: #fff;
+    border: 1px solid #dddfe5;
+    border-radius: 8px;
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-portfolio {
+    width: 300px;
+    height: 205px;
+}
+
+.imagen-proyecto {
+    height: 205px;
+}
+
+.imagen-pelicula {
+    width: 330px;
+}
+
+.sub-proy {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 60px;
+    background-color: #CBC0D3;
+    text-align: center;
+}
+
+.contendor-footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.li-footer {
+    margin: 10px;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-redes {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.cierre-footer {
+    color:white;
+}
+
+ul {
+    padding: 0px;
+}
+
+.link-footer:visited {
     color:white;
 }

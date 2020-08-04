@@ -13,14 +13,14 @@
 <body>
     <nav>
         <ul class="barra">
-            <li>HOLA</li>
-            <li>CONOCIMIENTOS</li>
-            <li>PROYECTOS</li>
-            <li>CONTACTO</li>
+            <li class="li-nav"><a href=#hola>HOLA</a></li>
+            <li class="li-nav"> <a href=#conocimientos>CONOCIMIENTOS</a></li>
+            <li class="li-nav"> <a href=#proyectos>PROYECTOS</a></li>
+            <li class="li-nav">CONTACTO</li>
         </ul>
     </nav>
 
-    <header class="section">
+    <header class="section" id="hola">
         <div class=contenedor1>
             <div class="infopersonal">
                 <h2 class="saludo">¡Hola! soy</h2>
@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <section class="contenedor-skills section">
+    <section class="contenedor-skills section" id="conocimientos">
         <div class="contenido columna">
             <h2>Mis conocimientos</h2>
             <p class="descripcion-skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque
@@ -76,6 +76,72 @@
             <h2 class="author-quote">Someone</h2>
         </div>
     </section>
+
+    <section class="section" id="proyectos">
+        <div class="columna contenido">
+            <h2>Mis Proyectos</h2>
+            <div class="contenido">
+                <ul class="barra-pequeña">
+                    <li class="li-filtros">Todos</li>
+                    <li class="li-filtros">HTML/CSS</li>
+                    <li class="li-filtros">JavaScript</li>
+                    <li class="li-filtros">React</li>
+                </ul>
+            </div>
+            <div class="contenedor-proyectos">
+                <articles class="proyecto">
+                    <img class="img-portfolio" src="./imagenes-proyectos/portfolio.png"/>
+                    <p class="sub-proy">Portfolio</p>
+                </articles>
+                <articles class="proyecto">
+                    <img class="imagen-proyecto" src="./imagenes-proyectos/cart.png"/>
+                    <p class="sub-proy">Tienda</p>
+                </articles>
+                <articles class="proyecto">
+                    <img class="imagen-proyecto" src="./imagenes-proyectos/juego.png"/>
+                    <p class="sub-proy">Juego de la memoria</p>
+                </articles>
+                <articles class="proyecto">
+                    <img class="imagen-proyecto" src="./imagenes-proyectos/gastos.png"/>
+                    <p class="sub-proy">Controlador de gastos</p>
+                </articles>
+                <articles class="proyecto">
+                    <img class="imagen-proyecto" src="./imagenes-proyectos/calendario.png"/>
+                    <p class="sub-proy">Administrador de reuniones</p>
+                </articles>
+                <articles class="proyecto">
+                    <img class="imagen-proyecto" src="./imagenes-proyectos/list.png"/>
+                    <p class="sub-proy">Todo App</p>
+                </articles>
+                <articles class="proyecto">
+                    <img class="imagen-pelicula" src="./imagenes-proyectos/peliculas.png"/>
+                    <p class="sub-proy">Buscador de peliculas</p>
+                </articles>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+        <ul CLASS="barra-pequeña">
+            <li class="li-footer"> <a class="link-footer" href="#hola">HOLA</a></li>
+            <li class="li-footer"> <a class="link-footer" href="#conocimientos">CONOCIMIENTOS</a></li>
+            <li class="li-footer"> <a class="link-footer" href="#proyectos">PROYECTOS</a></li>
+            <li class="li-footer">CONTACTO</li>
+        </ul>
+
+        <ul class="redes-sociales">
+            <li><img class="iconos-redes" src="./iconosfooter/twitter.png"/></li> 
+            <li><img class="iconos-redes" src="./iconosfooter/github.png"/></li> 
+            <li><img class="iconos-redes" src="./iconosfooter/linkedin.png"/></li> 
+            <li><img class="iconos-redes" src="./iconosfooter/mail.png"/></li> 
+
+        </ul>
+
+        <p class="cierre-footer">Hecho con ❤️ por Melissa Dorado</p>
+        </div>
+    </footer>
 
 </body>
 
