@@ -8,15 +8,9 @@ a {
     text-decoration: none;
 }
 
-
-.link-nav:visited, .link-nav {
-    color:#3e434b;
-}
-
 html {
     scroll-behavior: smooth;
 }
-
 
 nav {
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
@@ -39,14 +33,18 @@ li {
     
 }
 
+.link-nav:visited, .link-nav {
+    color:#3e434b;
+}
+
 .boton {
     background-color: #CBC0D3;
     padding: 10px 20px;
     border-radius: 100px;
-    color: white;
+    color:white;
 }
 
-.link-boton:visited, .link-boton {
+.link-boton:visited, .link-boton, .author-quote {
     color:white;
 }
 
@@ -55,21 +53,17 @@ li {
     padding: 110px 40px 130px;
     display: flex;
     justify-content: center;
-    text-align: center;
-    
 }
 .contenedor1 {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 
 .infopersonal {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-align: left;
     justify-content: center;
     margin: 50px;
 }
@@ -183,10 +177,6 @@ h3 {
     color: white;
 }
 
-.author-quote {
-    color:white;
-}
-
 .barra-pequeña {
     display: flex;
     justify-content: center;
@@ -238,22 +228,9 @@ h3 {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 80px 20px 60px;
     background-color: #CBC0D3;
     text-align: center;
-}
-
-.contendor-footer {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
 }
 
 .li-footer {
@@ -272,15 +249,11 @@ footer {
     margin: 10px;
 }
 
-.cierre-footer {
-    color:white;
-}
-
 ul {
     padding: 0px;
 }
 
-.link-footer:visited, .link-footer {
+.link-footer:visited, .link-footer, .cierre-footer {
     color:white;
 }
 
