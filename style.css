@@ -7,7 +7,9 @@ body {
 a {
     text-decoration: none;
 }
-a:visited {
+
+
+.link-nav:visited, .link-nav {
     color:#3e434b;
 }
 
@@ -25,6 +27,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding-right: 300px;
+    align-items: center;
 }
 
 li {
@@ -33,6 +36,18 @@ li {
 }
 .li-nav {
     margin-left: 20px;
+    
+}
+
+.boton {
+    background-color: #CBC0D3;
+    padding: 10px 20px;
+    border-radius: 100px;
+    color: white;
+}
+
+.link-boton:visited, .link-boton {
+    color:white;
 }
 
 
@@ -77,6 +92,11 @@ h1 {
     font-weight: 900;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
 
 .nombre {
     margin-top: 0;
@@ -92,7 +112,7 @@ h1 {
 .descripcion {
     color: #8E9AAF;
     font-weight: 200;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .contenedor-skills {
@@ -170,6 +190,7 @@ h1 {
 .barra-pequeña {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -259,6 +280,14 @@ ul {
     padding: 0px;
 }
 
-.link-footer:visited {
+.link-footer:visited, .link-footer {
     color:white;
+}
+
+button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
 }
