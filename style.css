@@ -14,13 +14,13 @@ html {
 
 nav {
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
-    padding: 25px 0;
+    padding: 8px 0;
     background-color: white;
 }
 .barra {
     display: flex;
     justify-content: flex-end;
-    padding-right: 300px;
+    padding-right: 40px;
     align-items: center;
 }
 
@@ -48,16 +48,21 @@ li {
     color:white;
 }
 
-
 .section {
     padding: 110px 40px 130px;
     display: flex;
     justify-content: center;
 }
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
 .contenedor1 {
     display:flex;
-    justify-content: space-between;
     align-items: center;
+    width: 1400px;
+    
 }
 
 .infopersonal {
@@ -65,7 +70,7 @@ li {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 50px;
+    width: 50%;
 }
 
 h2{
@@ -98,9 +103,13 @@ h3 {
     color: #CBC0D3;
 }
 
+.contenedor-imagen {
+    width: 50%;
+   
+}
+
 .fotoperfil {
-    width: 600px;
-    margin: 50px;
+    width: 100%;
 }
 
 .descripcion {
