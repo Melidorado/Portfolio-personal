@@ -13,11 +13,12 @@
 <body>
     
     <nav>
-        <ul class="barra">
+        <ul class="barra columna">
             <li class="li-nav"><a class="link-nav" href=#hola>HOLA</a></li>
             <li class="li-nav"><a class="link-nav"href=#conocimientos>CONOCIMIENTOS</a></li>
             <li class="li-nav"><a class="link-nav"href=#proyectos>PROYECTOS</a></li>
-            <li class="li-nav boton"><a class="link-boton" href="">CONTACTO</a></li>
+            <li class="li-nav boton"><a class="link-boton link-nav" href=#footer>CONTACTO</a></li>
+            <li class="hamburguesa"><i class="fas fa-bars"></i></li>
         </ul>
     </nav>
 
@@ -94,31 +95,45 @@
             </div>
             <div class="contenedor-proyectos">
                 <articles class="proyecto">
-                    <img class="img-portfolio" src="./imagenes-proyectos/portfolio.png"/>
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagen-proyecto" src="./imagenes-proyectos/portfolio.png"/>
+                    </div>
                     <p class="sub-proy">Portfolio</p>
                 </articles>
                 <articles class="proyecto">
-                    <img class="imagen-proyecto" src="./imagenes-proyectos/cart.png"/>
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagen-proyecto" src="./imagenes-proyectos/cart.png"/>
+                    </div>
                     <p class="sub-proy">Tienda</p>
                 </articles>
                 <articles class="proyecto">
-                    <img class="imagen-proyecto" src="./imagenes-proyectos/juego.png"/>
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagen-proyecto" src="./imagenes-proyectos/juego.png"/>
+                    </div>
                     <p class="sub-proy">Juego de la memoria</p>
                 </articles>
                 <articles class="proyecto">
-                    <img class="imagen-proyecto" src="./imagenes-proyectos/gastos.png"/>
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagen-proyecto" src="./imagenes-proyectos/gastos.png"/>
+                    </div>
                     <p class="sub-proy">Controlador de gastos</p>
                 </articles>
                 <articles class="proyecto">
-                    <img class="imagen-proyecto" src="./imagenes-proyectos/calendario.png"/>
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagen-proyecto" src="./imagenes-proyectos/calendario.png"/>
+                    </div>
                     <p class="sub-proy">Administrador de reuniones</p>
                 </articles>
                 <articles class="proyecto">
-                    <img class="imagen-proyecto" src="./imagenes-proyectos/list.png"/>
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagen-proyecto" src="./imagenes-proyectos/list.png"/>
+                    </div>
                     <p class="sub-proy">Todo App</p>
                 </articles>
                 <articles class="proyecto">
-                    <img class="imagen-pelicula" src="./imagenes-proyectos/peliculas.png"/>
+                    <div class="contenedor-img-proyecto">
+                        <img class="imagen-proyecto" src="./imagenes-proyectos/peliculas.png"/>
+                    </div>
                     <p class="sub-proy">Buscador de peliculas</p>
                 </articles>
             </div>
@@ -126,7 +141,7 @@
 
     </section>
 
-    <footer>
+    <footer id="footer">
         <div>
         <ul CLASS="barra-pequeña">
             <li class="li-footer"> <a class="link-footer" href="#hola">HOLA</a></li>

@@ -16,12 +16,22 @@ nav {
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
     padding: 8px 0;
     background-color: white;
+    display: flex;
+    justify-content: center;
 }
+
+.columna {
+    width: 100%;
+    max-width: 1100px;
+}
+
 .barra {
     display: flex;
     justify-content: flex-end;
     padding-right: 40px;
     align-items: center;
+    width: 1500px;
+    max-width: 1500px;
 }
 
 li {
@@ -30,7 +40,6 @@ li {
 }
 .li-nav {
     margin-left: 20px;
-    
 }
 
 .link-nav:visited, .link-nav {
@@ -44,8 +53,17 @@ li {
     color:white;
 }
 
+.hamburguesa {
+    display: none;
+}
+
 .link-boton:visited, .link-boton, .author-quote {
     color:white;
+}
+
+header {
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .section {
@@ -54,10 +72,6 @@ li {
     justify-content: center;
 }
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-}
 .contenedor1 {
     display:flex;
     align-items: center;
@@ -103,6 +117,12 @@ h3 {
     color: #CBC0D3;
 }
 
+.descripcion {
+    color: #8E9AAF;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
 .contenedor-imagen {
     width: 50%;
    
@@ -112,19 +132,8 @@ h3 {
     width: 100%;
 }
 
-.descripcion {
-    color: #8E9AAF;
-    font-weight: 200;
-    margin-bottom: 20px;
-}
-
 .contenedor-skills {
     background-color: #FEEAFA;
-}
-
-.columna {
-    width: 100%;
-    max-width: 1100px;
 }
 
 .contenido {
@@ -158,6 +167,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .icon {
@@ -166,6 +176,7 @@ h3 {
 
 .skill-title {
     margin-top: 20px;
+    margin-bottom: 0;
     font-size: 25px;
     font-weight: 700;
 }
@@ -209,31 +220,25 @@ h3 {
     border: 1px solid #dddfe5;
     border-radius: 8px;
     width: 280px;
-    height: 280px;
+    height: 250px;
     margin: 10px;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.img-portfolio {
-    width: 300px;
-    height: 205px;
 }
 
 .imagen-proyecto {
-    height: 205px;
+    width: 100%;
 }
-
-.imagen-pelicula {
-    width: 330px;
+.contenedor-img-proyecto {
+    height: 200px;
 }
-
 .sub-proy {
     font-weight: 600;
     margin-top: 20px;
+    margin-bottom: 0;
+    
 }
 
 footer {
@@ -272,4 +277,143 @@ button {
     cursor: pointer;
     border: 0;
     background-color: transparent;
+}
+
+@media (max-width:1000px) {
+    
+    .li-nav {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 20px;
+    }
+
+    .contenedor1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infopersonal{
+        text-align: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .contenedor-imagen {
+        width: 550px;
+    }
+
+    .skill {
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+    }
+
+    .icon {
+        font-size: 80px;
+    }
+
+    .skill-title {
+        font-size: 20px;
+    }
+
+    .proyecto {
+        width: 200px;
+        height: 170px;
+    }
+
+    .contenedor-img-proyecto {
+        height: 130px;
+    }
+
+    .li-filtros {
+        margin: 10px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .saludo {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .descripcion, h3, .descripcion-skills, .skill-title, .quote {
+        font-size: 15px;
+    }
+
+    .contenedor-imagen {
+        width: 350px;
+        margin-top: 70px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .skill {
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+    }
+
+    .icon, .quote-icon {
+        font-size: 50px;
+    }
+
+    .li-filtros {
+        margin: 2px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .proyecto {
+        width: 260px;
+        height: 230px;
+    }
+
+    .contenedor-img-proyecto {
+        height: 180px;
+    }
+
+    .li-footer {
+        display: none;
+    }
+
+    .iconos-redes {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cierre-footer {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:444px) {
+
+    .skill {
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+    }
+
+    .icon {
+        font-size: 45px;
+    }
+    
 }
