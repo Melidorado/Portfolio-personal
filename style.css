@@ -376,7 +376,7 @@ ul {
     }
 
     .contenedor-imagen {
-        width: 350px;
+        width: auto;
         margin-top: 70px;
     }
 
