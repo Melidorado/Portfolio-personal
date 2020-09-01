@@ -14,7 +14,11 @@
 <body>
     
     <nav>
+        <!-- No veo por que agregas la clase columna aqui, ya que ambos estilos estan pisados por lo que le da barra -->
         <ul class="barra columna">
+            <!-- No es buena idea que la clase de un elemento incluya su etiqueta - esa es informacion que ya tenemos. 
+            Los nombres de clases deben ser descriptivos en un sentido funcional: que hace este elemento? 
+            (No "qué es").  -->
             <li class="li-nav"><a class="link-nav" href=#hola>HOLA</a></li>
             <li class="li-nav"><a class="link-nav"href=#conocimientos>CONOCIMIENTOS</a></li>
             <li class="li-nav"><a class="link-nav"href=#proyectos>PROYECTOS</a></li>
@@ -23,9 +27,15 @@
         </ul>
     </nav>
 
+
     <header class="section" id="hola">
         <div class="contenedor1 columna">
             <div class="infopersonal">
+                <!-- los titulos deben seguir una jerarquia clara: en este caso, tu hola y tus titulos como 
+                "Mis conocimientos" tienen la misma etiqueta, aunque no creo que les corresponda, ya que 
+                claramente "Mis conocimientos" tiene una jerarquia mayor a este hola (que solo acompaña) al
+                titulo principal con tu nombre. No es buena idea darle estilos distintos al mismo h2; revela
+                justamente una confusion en las jerarquias.  -->
                 <h2 class="saludo">¡Hola! soy</h2>
                 <h1 class="nombre">Melissa Dorado</h1>
                 <p class="descripcion">Diseñadora audiovisual, Fotografa y futura programadora FrontEnd</p>
