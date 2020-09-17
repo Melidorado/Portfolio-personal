@@ -41,6 +41,44 @@ nav {
     max-width: 1500px;
 }
 
+.menu-desplegados {
+    margin: 20px 80px;
+    color: white;
+}
+
+.contenedor-desplegable {
+    position: relative;
+    overflow: hidden;
+}
+
+
+#desplegable {
+    background-color:#CBC0D3;
+    width: 100vw;;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    transform: translateY(-172px);
+    transition: 1s;
+}
+
+.mostrar-menu {
+    transform: translateY(0);
+}
+
+.cambio-desplegable {
+    background-color:#CBC0D3;
+}
+
+.menus, .menus:visited {
+    color: white;
+}
+
+#desplegable ul {
+    margin: 0;
+}
+
 .li-nav {
     margin-left: 20px;
 }
@@ -302,6 +340,7 @@ ul {
 
 
 @media (max-width:1000px) {
+
     
     .li-nav {
         display: none;

@@ -13,15 +13,27 @@
 
 <body>
     
-    <nav>
+    <nav id="barraNavegacion">
         <ul class="barra columna">
             <li class="li-nav"><a class="link-nav" href=#hola>HOLA</a></li>
             <li class="li-nav"><a class="link-nav"href=#conocimientos>CONOCIMIENTOS</a></li>
             <li class="li-nav"><a class="link-nav"href=#proyectos>PROYECTOS</a></li>
             <li class="li-nav boton"><a class="link-boton link-nav" href=#footer>CONTACTO</a></li>
-            <li class="hamburguesa"><i class="fas fa-bars"></i></li>
+            <li id="hamburguesa" class="hamburguesa"><i class="fas fa-bars"></i></li>
         </ul>
     </nav>
+
+    <section class="contenedor-desplegable" >
+        <div id="desplegable">
+            <ul >
+                <li class="menu-desplegados"><a class="menus" href=#hola>HOLA</a></li>
+                <li class="menu-desplegados"><a class="menus"href=#conocimientos>CONOCIMIENTOS</a></li>
+                <li class="menu-desplegados"><a class="menus"href=#proyectos>PROYECTOS</a></li>
+                <li class="menu-desplegados"><a class="menus" href=#footer>CONTACTO</a></li>
+            </ul>
+        </div>
+
+    </section>
 
     <header class="section" id="hola">
         <div class="contenedor1 columna">
@@ -160,6 +172,8 @@
         <p class="cierre-footer">Hecho con ❤️ por Melissa Dorado</p>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 
