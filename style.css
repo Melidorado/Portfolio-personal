@@ -30,6 +30,7 @@ nav {
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .barra {
@@ -41,42 +42,12 @@ nav {
     max-width: 1500px;
 }
 
-.menu-desplegados {
-    margin: 20px 80px;
-    color: white;
-}
-
-.contenedor-desplegable {
-    position: relative;
-    overflow: hidden;
-}
-
-
-#desplegable {
-    background-color:#CBC0D3;
-    width: 100vw;;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    transform: translateY(-172px);
-    transition: 1s;
-}
-
-.mostrar-menu {
-    transform: translateY(0);
-}
-
 .cambio-desplegable {
     background-color:#CBC0D3;
 }
 
-.menus, .menus:visited {
-    color: white;
-}
-
-#desplegable ul {
-    margin: 0;
+.show {
+    height: 180px !important;
 }
 
 .li-nav {
@@ -94,6 +65,10 @@ nav {
     color:white;
 }
 
+#hamburguesa {
+    font-size: 22px;
+    margin-right: 40px;
+}
 .hamburguesa {
     display: none;
 }
@@ -341,14 +316,35 @@ ul {
 
 @media (max-width:1000px) {
 
+    nav {
+        justify-content: flex-end;
     
-    .li-nav {
-        display: none;
     }
 
+    .barra {
+        background-color:#CBC0D3;
+        width: 100vw;
+        padding: 0;
+        height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        top: 43px;
+        position: absolute;
+        transition: 1s;
+        overflow: hidden;
+    }
+
+    .li-nav {
+        padding: 10px;
+    }
+
+    
     .hamburguesa {
         display: block;
         font-size: 20px;
+        padding: 10px 0;
     }
 
     .contenedor1 {
