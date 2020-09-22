@@ -25,12 +25,14 @@ li {
 /*  ACA TERMINAN LOS COMANDOS GENERALES Y EMPIEZA LA BARRA DE NAVEGACION*/
 
 nav {
+    width: 100vw;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
     padding: 8px 0;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 .barra {
@@ -42,15 +44,19 @@ nav {
     max-width: 1500px;
 }
 
+/* MENU DESPLEGABLE ------------->  */ 
+
 .cambio-desplegable {
-    background-color:#CBC0D3;
+    background-color:#CDB5DE;
 }
 
 .show {
     height: 180px !important;
 }
 
-.li-nav {
+/*   <------------MENU DESPLEGABLE */ 
+
+.item-nav {
     margin-left: 20px;
 }
 
@@ -58,11 +64,20 @@ nav {
     color:#3e434b;
 }
 
+.link-nav:hover {
+    color: #CDB5DE;
+}
+
 .boton {
-    background-color: #CBC0D3;
+    background-color: #CDB5DE;
     padding: 10px 20px;
     border-radius: 100px;
     color:white;
+    transition: .3s;
+}
+
+.boton:hover {
+    background-color: #D9C7E6;
 }
 
 #hamburguesa {
@@ -132,7 +147,7 @@ h3 {
 .nombre {
     margin-top: 0;
     margin-bottom: 5px;
-    color: #CBC0D3;
+    color: #CDB5DE;
 }
 
 .descripcion {
@@ -162,6 +177,7 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .descripcion-skills {
@@ -180,7 +196,7 @@ h3 {
 
 .skill {
     background-color: #fff;
-    border: 1px solid #dddfe5;
+    border: 2px solid #dddfe5;
     border-radius: 8px;
     width: 230px;
     height: 230px;
@@ -190,6 +206,11 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.skill:hover {
+    border: 2px solid #CDB5DE;
+    color: #CDB5DE;
 }
 
 .icon {
@@ -229,10 +250,16 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    
 }
 
-.li-filtros {
+
+
+.filtros-tec {
     margin: 30px;
+   
+    
 }
 
 button {
@@ -241,6 +268,23 @@ button {
     cursor: pointer;
     border: 0;
     background-color: transparent;
+    outline: none;
+    
+}
+
+
+
+.filtros {
+    border: solid 2px transparent;
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: .2s;
+
+}
+
+.filtros:focus {
+        background-color: #CDB5DE;
+        color:white; 
 }
 
 /*ACA TERMINA EL MENU DE FILTROS*/
@@ -257,7 +301,7 @@ button {
 
 .proyecto {
     background-color: #fff;
-    border: 1px solid #dddfe5;
+    border: 2px solid #dddfe5;
     border-radius: 8px;
     width: 280px;
     height: 250px;
@@ -266,6 +310,17 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.proyecto:hover {
+    border: 2px solid #CDB5DE;
+    color: #CDB5DE;
+    box-shadow: 0 0 10px 2px rgba(205, 181, 222, 0.8);
+    
+}
+
+.proyecto:focus {
+    box-shadow: 0 0 10px 2px rgba(205, 181, 222, 0.5);
 }
 
 .imagen-proyecto {
@@ -280,6 +335,124 @@ button {
     margin-bottom: 0;
 }
 
+/*   FORMULARIO DE CONTACTO       */
+
+.contenedor-formulario {
+    background-color: #FEEAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contacto {
+    display: flex;
+    width: 65%;
+    background-color: white;
+    border: 2px solid #dddfe5;
+    border-radius: 8px;
+    padding: 80px 70px;
+}
+
+.sides {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    justify-content: flex-start;
+    
+}
+
+.sides > h2 {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.sides > p {
+    margin-top:0;
+    margin-right: 150px;
+
+}
+
+.secciones-completar {
+    display: flex;
+    flex-direction: column;
+}
+
+.primera-linea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.espacio-nombre {
+    width: 47%;
+}
+
+input, textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(240, 240, 240);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline-style:none;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #CDB5DE;
+    box-shadow: 0 0 10px 2px rgba(205, 181, 222, 0.8);
+
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+input[type="submit"] {
+    width: 25%;
+    padding: 13px 18px;
+    background-color: #CDB5DE;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.redes-formulario {
+    width:40px ;
+    height: 40px;
+    font-size: 20px;
+    color: #CDB5DE;
+    background-color: white;
+    border:1px solid transparent;
+    border-radius: 50%;
+    line-height: 40px !important;
+    text-align: center;
+
+    margin:6px;
+    
+}
+
+.redes-formulario:hover {
+    color:white;
+    background-color:#CDB5DE ;
+}
+
+.link-redes, .link-redes:visited {
+    color: #3e434b;
+}
+
+.link-redes:hover {
+    color: #CDB5DE;
+}
+
+small {
+    color: rgb(203, 203, 203);
+}
+
+
+
+
 /*EMPIEZA EL FOOTER*/
 
 footer {
@@ -288,7 +461,7 @@ footer {
     text-align: center;
 }
 
-.li-footer {
+.item-footer {
     margin: 10px;
     color: white;
 }
@@ -305,6 +478,33 @@ footer {
     margin: 10px;
 }
 
+.redes {
+    width:40px ;
+    height: 40px;
+    font-size: 20px;
+    color: #CBC0D3;
+    background-color: white;
+    border:1px solid transparent;
+    border-radius: 50%;
+    line-height: 40px !important;
+    text-align: center;
+
+    margin:8px;
+    
+}
+
+.redes:hover {
+    border: 1px solid white;
+    border-radius: 50%;
+    color:white;
+    background-color: transparent;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+}
+
+.redes:focus {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+}
+
 ul {
     padding: 0px;
 }
@@ -313,16 +513,21 @@ ul {
     color:white;
 }
 
+.hidden {
+    display: none;
+}
+
 
 @media (max-width:1000px) {
 
     nav {
         justify-content: flex-end;
+        transition: .3s;
     
     }
 
     .barra {
-        background-color:#CBC0D3;
+        background-color:#CDB5DE;
         width: 100vw;
         padding: 0;
         height: 0;
@@ -332,11 +537,11 @@ ul {
         flex-direction: column;
         top: 43px;
         position: absolute;
-        transition: 1s;
+        transition: .3s ease-out;
         overflow: hidden;
     }
 
-    .li-nav {
+    .item-nav {
         padding: 10px;
     }
 
@@ -386,7 +591,7 @@ ul {
         height: 130px;
     }
 
-    .li-filtros {
+    .filtros-tec {
         margin: 10px;
     }
 
@@ -429,7 +634,7 @@ ul {
         font-size: 50px;
     }
 
-    .li-filtros {
+    .filtros-tec {
         margin: 2px;
     }
 
@@ -446,14 +651,24 @@ ul {
         height: 180px;
     }
 
-    .li-footer {
+    .item-footer {
         display: none;
     }
 
-    .iconos-redes {
-        width: 30px;
-        height: 30px;
+    .redes {
+        width:25px ;
+        height: 25px;
+        font-size: 10px;
+        color: #CBC0D3;
+        background-color: white;
+        border-radius: 50%;
+        line-height: 25px !important;
+        text-align: center;
+    
+        margin:5px;
+        
     }
+
 
     .cierre-footer {
         font-size: 10px;

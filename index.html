@@ -16,10 +16,10 @@
     <nav id="barra-principal">
         
             <ul id="barraNavegacion" class="barra columna">
-                <li class="li-nav"><a class="link-nav" href=#hola>HOLA</a></li>
-                <li class="li-nav"><a class="link-nav"href=#conocimientos>CONOCIMIENTOS</a></li>
-                <li class="li-nav"><a class="link-nav"href=#proyectos>PROYECTOS</a></li>
-                <li class="li-nav boton"><a class="link-boton link-nav" href=#footer>CONTACTO</a></li>
+                <li class="item-nav"><a class="link-nav" href=#hola>HOLA</a></li>
+                <li class="item-nav"><a class="link-nav"href=#conocimientos>CONOCIMIENTOS</a></li>
+                <li class="item-nav"><a class="link-nav"href=#proyectos>PROYECTOS</a></li>
+                <li class="item-nav boton"><a class="link-boton link-nav" href=#footer>CONTACTO</a></li>
             </ul>
         
             <div  class="hamburguesa">
@@ -30,7 +30,7 @@
     <header class="section" id="hola">
         <div class="contenedor1 columna">
             <div class="infopersonal">
-                <h2 class="saludo">¡Hola! soy</h2>
+                <h3 class="saludo">¡Hola! soy</h3>
                 <h1 class="nombre">Melissa Dorado</h1>
                 <p class="descripcion">Diseñadora audiovisual, Fotografa y futura programadora FrontEnd</p>
                 <h3 class="boton"><a class="link-boton" href=#proyectos>LO QUE HAGO</a></h3>
@@ -90,50 +90,51 @@
             <h2>Mis Proyectos</h2>
             <div class="contenido">
                 <ul class="barra-pequeña">
-                    <li class="li-filtros"><button class="boton">Todos</button></li>
-                    <li class="li-filtros"><button>HTML/CSS</button></li>
-                    <li class="li-filtros"><button>JavaScript</button></li>
-                    <li class="li-filtros"><button>React</button></li>
+                    <li class="filtros-tec"><button data-nombre="todos" class="filtros">Todos</button></li>
+                    <li class="filtros-tec"><button data-nombre="html/css" class="filtros">HTML/CSS</button></li>
+                    <li class="filtros-tec"><button data-nombre="javascript" class="filtros">JavaScript</button></li>
+                    <li class="filtros-tec"><button data-nombre="react" class="filtros">React</button></li>
                 </ul>
             </div>
             <div class="contenedor-proyectos">
-                <articles class="proyecto">
+                <articles data-nombre="html/css" class="proyecto">
                     <div class="contenedor-img-proyecto">
                         <img class="imagen-proyecto" src="./imagenes-proyectos/portfolio.png"/>
                     </div>
                     <p class="sub-proy">Portfolio</p>
                 </articles>
-                <articles class="proyecto">
+            
+                <articles data-nombre="javascript" class="proyecto">
                     <div class="contenedor-img-proyecto">
                         <img class="imagen-proyecto" src="./imagenes-proyectos/cart.png"/>
                     </div>
                     <p class="sub-proy">Tienda</p>
                 </articles>
-                <articles class="proyecto">
+                <articles data-nombre="javascript" class="proyecto">
                     <div class="contenedor-img-proyecto">
                         <img class="imagen-proyecto" src="./imagenes-proyectos/juego.png"/>
                     </div>
                     <p class="sub-proy">Juego de la memoria</p>
                 </articles>
-                <articles class="proyecto">
+                <articles data-nombre="javascript" class="proyecto">
                     <div class="contenedor-img-proyecto">
                         <img class="imagen-proyecto" src="./imagenes-proyectos/gastos.png"/>
                     </div>
                     <p class="sub-proy">Controlador de gastos</p>
                 </articles>
-                <articles class="proyecto">
+                <articles data-nombre="javascript" class="proyecto">
                     <div class="contenedor-img-proyecto">
                         <img class="imagen-proyecto" src="./imagenes-proyectos/calendario.png"/>
                     </div>
                     <p class="sub-proy">Administrador de reuniones</p>
                 </articles>
-                <articles class="proyecto">
+                <articles data-nombre="react" class="proyecto">
                     <div class="contenedor-img-proyecto">
                         <img class="imagen-proyecto" src="./imagenes-proyectos/list.png"/>
                     </div>
                     <p class="sub-proy">Todo App</p>
                 </articles>
-                <articles class="proyecto">
+                <articles data-nombre="react" class="proyecto">
                     <div class="contenedor-img-proyecto">
                         <img class="imagen-proyecto" src="./imagenes-proyectos/peliculas.png"/>
                     </div>
@@ -144,20 +145,63 @@
 
     </section>
 
+    <section class="section contenedor-formulario">
+        <form class="form-contacto">
+            <div class="sides">
+                <h2>Contactame</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque deleniti vero quasi esse? Illo facere commodi ullam adipisci sapiente tempore aspernatur tempora est doloremque et laborum distinctio dolor, odio harum!</p>
+                
+                <ul>
+                    <li><a href="https://twitter.com/melidorado" class="link-redes" ><i class="fab fa-twitter redes-formulario" /></i>@meliidorado</a></li> 
+                    <li><a href="https://github.com/Melidorado" class="link-redes"><i class="fab fa-github-alt redes-formulario" /></i>Melidorado</a></li> 
+                    <li><a href="https://www.linkedin.com/in/melidorado" class="link-redes"><i class="fab fa-linkedin-in redes-formulario" /></i>Melissa Dorado</a></li> 
+                    <li><a href="mailto:meliidorado@hotmail.com" class="link-redes"><i class="fas fa-envelope redes-formulario" /></i>meliidorado@hotmail.com</a></li> 
+        
+                </ul>
+            </div>
+            <div class="sides">
+                <h2>Escribime</h2>
+                <div class="primera-linea">
+                    <div class="secciones-completar espacio-nombre">
+                        <label>Nombre *</label>
+                        <input type="text"  placeholder="Malena" required>
+                    </div>
+                    <div class="secciones-completar espacio-nombre">
+                        <label>Apellido *</label>
+                        <input type="text"  placeholder="Rey" required>
+                    </div>
+                </div>
+
+                <div class="secciones-completar">
+                    <label>Email *</label>
+                    <input type="email"  placeholder="malerey@gmail.com" required>
+                </div>
+
+                <div class="secciones-completar">
+                    <label>Mensaje *</label>
+                    <textarea name="mensaje" placeholder=" Escriba un mensaje aqui" cols="10" rows="10" required></textarea>
+                    <small>* Los campos son requeridos</small>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+
     <footer id="footer">
         <div>
         <ul CLASS="barra-pequeña">
-            <li class="li-footer"> <a class="link-footer" href="#hola">HOLA</a></li>
-            <li class="li-footer"> <a class="link-footer" href="#conocimientos">CONOCIMIENTOS</a></li>
-            <li class="li-footer"> <a class="link-footer" href="#proyectos">PROYECTOS</a></li>
-            <li class="li-footer"> <a class="link-footer" href="#footer">CONTACTO</a></li>
+            <li class="item-footer"> <a class="link-footer" href="#hola">HOLA</a></li>
+            <li class="item-footer"> <a class="link-footer" href="#conocimientos">CONOCIMIENTOS</a></li>
+            <li class="item-footer"> <a class="link-footer" href="#proyectos">PROYECTOS</a></li>
+            <li class="item-footer"> <a class="link-footer" href="#footer">CONTACTO</a></li>
         </ul>
 
         <ul class="redes-sociales">
-            <li><a href="https://twitter.com/melidorado"><img class="iconos-redes" src="./iconosfooter/twitter.png"/></a></li> 
-            <li><a href="https://github.com/Melidorado"><img class="iconos-redes" src="./iconosfooter/github.png"/></a></li> 
-            <li><a href="https://www.linkedin.com/in/melidorado"><img class="iconos-redes" src="./iconosfooter/linkedin.png"/></a></li> 
-            <li><a href="mailto:meliidorado@hotmail.com"><img class="iconos-redes" src="./iconosfooter/mail.png"/></a></li> 
+            <li><a href="https://twitter.com/melidorado"><i class="fab fa-twitter redes" /></i></a></li> 
+            <li><a href="https://github.com/Melidorado"><i class="fab fa-github-alt redes" /></i></a></li> 
+            <li><a href="https://www.linkedin.com/in/melidorado"><i class="fab fa-linkedin-in redes" /></i></a></li> 
+            <li><a href="mailto:meliidorado@hotmail.com"><i class="fas fa-envelope redes" /></i></a></li> 
 
         </ul>
 
