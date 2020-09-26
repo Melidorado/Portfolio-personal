@@ -370,10 +370,19 @@ button {
 .sides > p {
     margin-top:0;
     margin-right: 150px;
+    margin-bottom: 20px;
+}
 
+.lista-redes {
+    margin: 0;
 }
 
 .secciones-completar {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-lista-redes {
     display: flex;
     flex-direction: column;
 }
@@ -416,6 +425,8 @@ input[type="submit"] {
     color: white;
     font-size: 18px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .redes-formulario {
@@ -517,6 +528,32 @@ ul {
     display: none;
 }
 
+@media (max-width:1100px) {
+    .sides > h2 {
+        font-size: 30px;
+    }
+
+    .sides > p {
+        font-size: 12px;
+        margin-right: 60px;
+    }
+
+    .link-redes {
+        font-size: 12px;
+    }
+
+    .redes-formulario {
+        margin: 4px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input[type="submit"] {
+        font-size: 15px;
+    }
+}
 
 @media (max-width:1000px) {
 
@@ -599,7 +636,42 @@ ul {
         font-size: 15px;
     }
 
+    .form-contacto{
+        flex-direction: column;
+        width: 50%;
+        padding: 60px 60px;
+    }
+
+    .sides {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contenedor-lista-redes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .apartado-escribir {
+        margin-top: 20px;
+    }
+
+    .redes-formulario {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px !important;
+
+    }
+
 }
+
+@media (max-width:800px) {
+    .form-contacto {
+        width: 70%;
+    }
+}
+
 
 @media (max-width:600px) {
 
