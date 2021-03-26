@@ -4,7 +4,7 @@ const botonDesplegable = document.getElementById("hamburguesa")
 const barraNavegacion = document.getElementById("barra-principal")
 const menuDesplegable = document.getElementById("barraNavegacion")
 
-const secciones = document.getElementsByClassName("li-nav")
+const secciones = document.getElementsByClassName("link-nav")
 
 
 
